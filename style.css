@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  background-color: #08a392;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0px;
+  color: white;
+}
+h1 {
+  text-align: center;
+}
+.photo {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+#conteiner {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+main {
+  margin: 10px;
+}
+section {
+  background: rgb(21, 79, 105);
+  margin: 10px;
+  padding: 20px;
+  border: 1px dotted;
+  width: 240px;
+}
+nav {
+  background-color: #565399;
+  margin: 10px 10px 0px 10px;
+}
+
+nav ul {
+  margin: 0px;
+  list-style-type: none;
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  display: block;
+  border: 1px solid #008b4b;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  margin: 0.5em;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px;
+  text-transform: uppercase;
+}
+
+li.selected {
+  background-color: #565399;
+}
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover,
+a:active {
+  color: #851C99;
+  text-decoration: none;
+}
+
+footer {
+  background-color: #3ba308;
+  text-align: center;
+  padding: 15px;
+  margin: 0px 10px 10px 10px;
+  font-weight: bold;
+  color: white;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 0;
+}
+
+.social-icons > li {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.social-icons a {
+  position: relative;
+  background-color: #eee;
+  display: block;
+  user-select: none;
+  transition: background-color 0.3s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+}
+
+.social-icons a:hover {
+  background-color: #e0e0e0;
+}
+
+.social-icons a::before {
+  content: "";
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  left: 0.65rem;
+  top: 0.65rem;
+  background: transparent no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.social-icons .social-icon-fb::before {
+  background-image: url("images/fb.png");
+}
+
+.social-icons .social-icon-vk::before {
+  background-image: url("images/vk.png");
+}
+
+.social-icons .social-icon-ytb::before {
+  background-image: url("images/ytb.png");
+}
+
+.social-icons .social-icon-ok::before {
+  background-image: url("images/ok.png");
+}
+
+.social-icons .social-icon-inst::before {
+  background-image: url("images/inst.png");
+}
